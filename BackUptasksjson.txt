@@ -1,0 +1,54 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Both: input.txt + CMD window",
+            "dependsOn": [
+                "Build and Run C++ with input/output.txt",
+                "Build and Run C++ via CMD"
+            ],
+            "dependsOrder": "parallel", // hoặc "sequence" nếu bạn muốn lần lượt
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Build and Run C++ with input/output.txt",
+            "type": "shell",
+            "command": "cmd",
+            "args": [
+                "/c",
+                "C:\\msys64\\ucrt64\\bin\\g++.exe -fdiagnostics-color=always -g \"${file}\" -o \"${fileDirname}\\${fileBasenameNoExtension}.exe\" && \"${fileDirname}\\${fileBasenameNoExtension}.exe\" < \"${fileDirname}\\input.txt\" > \"${fileDirname}\\output.txt\" && echo. && echo ===== OUTPUT.TXT ===== && type \"${fileDirname}\\output.txt\" && echo. && pause"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Compile and run C++ file using input.txt and write to output.txt"
+        },
+        {
+            "label": "Build and Run C++ via CMD",
+            "type": "shell",
+            "command": "cmd",
+            "args": [
+                "/c",
+                "C:\\msys64\\ucrt64\\bin\\g++.exe",
+                "-fdiagnostics-color=always",
+                "-g",
+                "\"${file}\"",
+                "-o",
+                "\"${fileDirname}\\${fileBasenameNoExtension}.exe\"",
+                "&&",
+                "start",
+                "cmd",
+                "/c",
+                "\"${fileDirname}\\${fileBasenameNoExtension}.exe & pause\""
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Build and run C++ file in a new CMD window"
+        }
+    ]
+}

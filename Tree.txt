@@ -1,0 +1,207 @@
+Tree:
+Binary Tree Inorder Traversal
+
+Maximum Depth of Binary Tree
+
+Symmetric Tree
+
+Path Sum
+
+Binary Tree Level Order Traversal
+
+Construct Binary Tree from Preorder and Inorder Traversal khó
+ 
+Flatten Binary Tree to Linked List khó
+
+Validate Binary Search Tree
+
+Unique Binary Search Trees
+
+Unique Binary Search Trees II
+
+Binary Tree Preorder Traversal
+
+Binary Tree Postorder Traversal
+
+Convert Sorted Array to Binary Search Tree
+
+Convert Sorted List to Binary Search Tree
+
+Balanced Binary Tree
+
+Minimum Depth of Binary Tree
+
+Path Sum II
+
+Binary Tree Zigzag Level Order Traversal
+
+Binary Tree Right Side View
+
+Binary Tree Maximum Path Sum
+
+Graph:
+Number of Islands
+
+Flood Fill
+
+Clone Graph
+
+Course Schedule
+
+Course Schedule II
+
+Word Ladder
+
+Word Ladder II
+
+Graph Valid Tree
+
+Network Delay Time
+
+Critical Connections in a Network
+
+Find Eventual Safe States
+
+All Paths From Source to Target
+
+Shortest Path in Binary Matrix
+
+Minimum Number of Vertices to Reach All Nodes
+
+Redundant Connection
+
+Keys and Rooms
+
+Reconstruct Itinerary
+
+Cheapest Flights Within K Stops
+
+Network Delay Time
+
+Minimum Height Trees
+
+Mixed Tree & Graph Challenges:
+Lowest Common Ancestor of a Binary Tree
+
+Serialize and Deserialize Binary Tree
+
+Kth Smallest Element in a BST
+
+Recover Binary Search Tree
+
+Binary Tree Cameras
+
+Smallest Subtree with all the Deepest Nodes
+
+Longest Univalue Path
+
+Diameter of Binary Tree
+
+House Robber III
+
+Cousins in Binary Tree
+
+Advanced Challenges:
+Word Search
+
+Word Search II
+
+Shortest Bridge
+
+Pacific Atlantic Water Flow
+
+Longest Increasing Path in a Matrix
+
+Alien Dictionary
+
+Minimum Genetic Mutation
+
+Accounts Merge
+
+Evaluate Division
+
+Redundant Connection II
+
+More Graph Problems:
+Detect Cycles in a Directed Graph
+
+Topological Sort
+
+Bellman-Ford Algorithm
+
+Dijkstra's Algorithm
+
+Prim's Algorithm
+
+Kruskal's Algorithm
+
+Tarjan's Algorithm
+
+Floyd-Warshall Algorithm
+
+Bipartite Graph Check
+
+Strongly Connected Components
+
+Tree Problems for Practice:
+Binary Tree Tilt
+
+Sum of Left Leaves
+
+Merge Two Binary Trees
+
+Find Bottom Left Tree Value
+
+Maximum Binary Tree
+
+Binary Tree Pruning
+
+Increasing Order Search Tree
+
+Construct String from Binary Tree
+
+Binary Tree Paths
+
+Subtree of Another Tree
+
+Graph Problems for Practice:
+Find the Town Judge
+
+Is Graph Bipartite?
+
+Shortest Path Visiting All Nodes
+
+Path with Maximum Probability
+
+Minimum Cost to Connect All Points
+
+Maximum Network Rank
+
+Count Unreachable Pairs of Nodes in an Undirected Graph
+
+Find if Path Exists in Graph
+
+Find Center of Star Graph
+
+Count Subtrees with Max Distance
+
+Challenging Problems:
+Binary Tree Coloring Game
+
+Maximum Width of Binary Tree
+
+Vertical Order Traversal of a Binary Tree
+
+Boundary of Binary Tree
+
+Delete Nodes and Return Forest
+
+Construct Binary Tree from String
+
+Binary Tree Longest Consecutive Sequence
+
+Binary Tree Upside Down
+
+Binary Tree Postorder Traversal (Iterative)
+
+Binary Tree Preorder Traversal (Iterative)

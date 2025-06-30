@@ -1,0 +1,1 @@
+{"name":"Local: AMyTemplate","url":"c:\\28techDSA\\AMyTemplate.cpp","tests":[{"id":1739324986936,"input":"2 3\n712 141 \n55 619\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\28techDSA\\AMyTemplate.cpp","group":"local","local":true}
