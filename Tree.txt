@@ -1,207 +1,44 @@
-Tree:
-Binary Tree Inorder Traversal
+1. Minimum Spanning Tree - Cây khung nhỏ nhất (Prim & Kruskal)
+Thuật toán Prim và Kruskal đều dùng để tìm tập hợp các cạnh kết nối tất cả các đỉnh trong một đồ thị có trọng số sao cho tổng trọng số là nhỏ nhất.
 
-Maximum Depth of Binary Tree
+1584. Min Cost to Connect All Points (Medium): Đây là bài toán chuẩn mực nhất (textbook problem) để bạn cài đặt thử cả Prim và Kruskal. Bạn được cho tọa độ các điểm và phải tìm chi phí nhỏ nhất để nối tất cả chúng lại với nhau (trọng số là khoảng cách Manhattan).
 
-Symmetric Tree
+1135. Connecting Cities With Minimum Cost (Medium - Premium): Một bài kinh điển khác về nối các thành phố.
 
-Path Sum
+1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree (Hard): Bài này rất hay để đào sâu hiểu biết của bạn về Kruskal và Disjoint Set Union (DSU). Bạn phải xác định xem cạnh nào bắt buộc phải có trong MST, và cạnh nào có thể có hoặc không.
 
-Binary Tree Level Order Traversal
+2. Topological Sort - Sắp xếp Topo (Kahn's Algorithm hoặc DFS) 
+Dùng để sắp xếp các đỉnh của đồ thị có hướng không có chu trình (DAG) sao cho với mọi cạnh từ U đến V, U luôn đứng trước V. Rất hay gặp trong các bài toán về "điều kiện tiên quyết" (prerequisites).
 
-Construct Binary Tree from Preorder and Inorder Traversal khó
- 
-Flatten Binary Tree to Linked List khó
+207. Course Schedule (Medium): Bài toán quốc dân của Topo Sort. Bạn cần xác định xem có thể hoàn thành tất cả các khóa học với các điều kiện tiên quyết cho trước hay không (thực chất là bài toán phát hiện chu trình trong đồ thị có hướng).
 
-Validate Binary Search Tree
+210. Course Schedule II (Medium): Giống bài 207 nhưng yêu cầu bạn phải in ra thứ tự các khóa học. Áp dụng trực tiếp thuật toán Kahn (dùng Queue) là ra.
 
-Unique Binary Search Trees
+802. Find Eventual Safe States (Medium): Một ứng dụng biến thể rất thú vị của Topo Sort (hoặc DFS coloring).
 
-Unique Binary Search Trees II
+269. Alien Dictionary (Hard - Premium): Bài toán cực kỳ nổi tiếng trong các buổi phỏng vấn của FAANG. Xây dựng đồ thị từ thứ tự từ điển của một ngôn ngữ ngoài hành tinh và dùng Topo Sort để tìm bảng chữ cái.
 
-Binary Tree Preorder Traversal
+3. Strongly Connected Components (Kosaraju / Tarjan)
+Thuật toán Kosaraju dùng 2 lần DFS (lần 2 chạy trên đồ thị đảo chiều) để tìm các Thành phần liên thông mạnh (SCC). Trên LeetCode, các bài hỏi thuần về SCC không nhiều bằng việc tìm Cầu/Khớp (dùng Tarjan).
 
-Binary Tree Postorder Traversal
+1192. Critical Connections in a Network (Hard): Thuật toán tìm Cầu (Bridges) trong đồ thị. Dù dùng thuật toán Tarjan là tối ưu nhất ở đây, nhưng nền tảng tư duy của nó (low-link values, DFS tree) rất gần gũi với việc học Kosaraju/SCC.
 
-Convert Sorted Array to Binary Search Tree
+1466. Reorder Routes to Make All Paths Lead to the City Zero (Medium): Bài này tuy không dùng Kosaraju trực tiếp nhưng tư duy về chiều của các cạnh đồ thị (tương tự bước đảo cạnh đồ thị của Kosaraju) sẽ giúp bạn giải quyết nó bằng DFS/BFS một cách thanh thoát.
 
-Convert Sorted List to Binary Search Tree
+4. Convex Hull - Bao lồi (Hình học tính toán)
+Thuật toán Convex Hull (như Graham Scan hay Monotone Chain/Andrew's Algorithm) dùng để tìm một đa giác lồi nhỏ nhất bao quanh toàn bộ một tập hợp các điểm trên mặt phẳng. Tuy thiên về Toán hình học, nhưng bản chất quá trình duyệt các điểm rất giống với stack/đồ thị.
 
-Balanced Binary Tree
+587. Erect the Fence (Hard): Đây là bài toán chuẩn mực và nổi tiếng nhất về Convex Hull trên LeetCode. Đề bài yêu cầu bạn dựng một hàng rào bao quanh toàn bộ các cái cây với chu vi nhỏ nhất. Học thuộc Monotone Chain Algorithm rồi mang vào ốp là xong.
 
-Minimum Depth of Binary Tree
+5. Các thuật toán đồ thị "Bắt buộc phải biết" khác
+Để hoàn thiện bộ kỹ năng đồ thị, bạn không thể bỏ qua các dạng này:
 
-Path Sum II
+Shortest Path (Dijkstra / Bellman-Ford): * 743. Network Delay Time (Medium): Bài tập thuần túy nhất để luyện code Dijkstra.
 
-Binary Tree Zigzag Level Order Traversal
+787. Cheapest Flights Within K Stops (Medium): Kinh điển cho Bellman-Ford vì có giới hạn số bước đi (K stops).
 
-Binary Tree Right Side View
+Disjoint Set Union - DSU (Union-Find):
 
-Binary Tree Maximum Path Sum
+547. Number of Provinces (Medium): Đếm số thành phần liên thông. Dùng BFS/DFS cũng được nhưng DSU là thanh lịch nhất.
 
-Graph:
-Number of Islands
-
-Flood Fill
-
-Clone Graph
-
-Course Schedule
-
-Course Schedule II
-
-Word Ladder
-
-Word Ladder II
-
-Graph Valid Tree
-
-Network Delay Time
-
-Critical Connections in a Network
-
-Find Eventual Safe States
-
-All Paths From Source to Target
-
-Shortest Path in Binary Matrix
-
-Minimum Number of Vertices to Reach All Nodes
-
-Redundant Connection
-
-Keys and Rooms
-
-Reconstruct Itinerary
-
-Cheapest Flights Within K Stops
-
-Network Delay Time
-
-Minimum Height Trees
-
-Mixed Tree & Graph Challenges:
-Lowest Common Ancestor of a Binary Tree
-
-Serialize and Deserialize Binary Tree
-
-Kth Smallest Element in a BST
-
-Recover Binary Search Tree
-
-Binary Tree Cameras
-
-Smallest Subtree with all the Deepest Nodes
-
-Longest Univalue Path
-
-Diameter of Binary Tree
-
-House Robber III
-
-Cousins in Binary Tree
-
-Advanced Challenges:
-Word Search
-
-Word Search II
-
-Shortest Bridge
-
-Pacific Atlantic Water Flow
-
-Longest Increasing Path in a Matrix
-
-Alien Dictionary
-
-Minimum Genetic Mutation
-
-Accounts Merge
-
-Evaluate Division
-
-Redundant Connection II
-
-More Graph Problems:
-Detect Cycles in a Directed Graph
-
-Topological Sort
-
-Bellman-Ford Algorithm
-
-Dijkstra's Algorithm
-
-Prim's Algorithm
-
-Kruskal's Algorithm
-
-Tarjan's Algorithm
-
-Floyd-Warshall Algorithm
-
-Bipartite Graph Check
-
-Strongly Connected Components
-
-Tree Problems for Practice:
-Binary Tree Tilt
-
-Sum of Left Leaves
-
-Merge Two Binary Trees
-
-Find Bottom Left Tree Value
-
-Maximum Binary Tree
-
-Binary Tree Pruning
-
-Increasing Order Search Tree
-
-Construct String from Binary Tree
-
-Binary Tree Paths
-
-Subtree of Another Tree
-
-Graph Problems for Practice:
-Find the Town Judge
-
-Is Graph Bipartite?
-
-Shortest Path Visiting All Nodes
-
-Path with Maximum Probability
-
-Minimum Cost to Connect All Points
-
-Maximum Network Rank
-
-Count Unreachable Pairs of Nodes in an Undirected Graph
-
-Find if Path Exists in Graph
-
-Find Center of Star Graph
-
-Count Subtrees with Max Distance
-
-Challenging Problems:
-Binary Tree Coloring Game
-
-Maximum Width of Binary Tree
-
-Vertical Order Traversal of a Binary Tree
-
-Boundary of Binary Tree
-
-Delete Nodes and Return Forest
-
-Construct Binary Tree from String
-
-Binary Tree Longest Consecutive Sequence
-
-Binary Tree Upside Down
-
-Binary Tree Postorder Traversal (Iterative)
-
-Binary Tree Preorder Traversal (Iterative)
+Bạn có muốn mình giải thích chi tiết ý tưởng hoặc cung cấp đoạn code mẫu (template) cho thuật toán nào trong danh sách trên để bạn dễ hình dung trước khi giải bài không?
