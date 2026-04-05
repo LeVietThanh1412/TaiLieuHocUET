@@ -1,0 +1,179 @@
+
+<!doctype html>
+<html lang="vi">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Học máy | Bài tập về nhà #2</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+  <main class="container my-4">
+    <h1>Bài tập về nhà #2</h1>
+    <h2>Hồi quy tuyến tính</h2>
+    <hr>
+
+    <!-- <h2>Bài 1: Hồi quy tuyến tính - Bình phương tối thiểu</h2>
+    <div class="q">
+      <p>
+        Xét một mô hình hồi quy tuyến tính đơn giản với RSS là thước đo sai số:
+        \[ L(\beta_{0},\beta) = \frac{1}{n} \sum_{i=1}^{n} (y_{i} - \beta_{0} - x_{i}\beta)^{2} \tag{1.1} \]
+        trong đó \(y\) là mục tiêu và \(X \in \mathbb{R}^{n}\) là một biến dự báo duy nhất.
+      </p>
+
+      <ol>
+        <li>
+          Hãy chứng minh rằng các giá trị cực tiểu hóa của Phương trình (1.1) là:
+          \[ \hat{\beta}_{0} = \overline{y} - \hat{\beta}\overline{x} \]
+          \[ \hat{\beta} =
+          \frac{\sum_{i=1}^{n}(x_{i}-\overline{x})(y_{i}-\overline{y})}{\sum_{i=1}^{n}(x_{i}-\overline{x})^{2}}
+          \]
+          Trong đó \(\overline{x}\) và \(\overline{y}\) là trung bình mẫu: \(\overline{x} =
+          \frac{1}{n}\sum_{i=1}^{n}x_{i}\) và \(\overline{y} = \frac{1}{n}\sum_{i=1}^{n}y_{i}\).
+          <br><em>Gợi ý: Tìm \(\hat{\beta}_{0}\) trước và thay nó vào biểu thức của \(\hat{\beta}\) để thu
+            được kết quả trên.</em>
+        </li>
+
+        <li>
+          Xét ví dụ với dữ liệu sau:
+          \[ X = \begin{bmatrix} 2 & 1 \\ 1 & 0 \\ 0 & 1 \end{bmatrix}, \quad y = \begin{bmatrix} 1 \\ 0 \\ -1
+          \end{bmatrix} \]
+          và phép chiếu \(P = X(X^{T}X)^{-1}X^{T}\).
+
+          <ol type="a">
+            <li>Vẽ đồ thị để trực quan hóa không gian cột của \(X\) dưới dạng một mặt
+              phẳng trong \(\mathbb{R}^{3}\).
+              <br><em>Nhắc lại: Không gian cột \(S \in \mathbb{R}^{3}\) được tạo bởi các vector cột
+                \(X^{(i)}\) của \(X\).</em>
+            </li>
+            <li>Thêm vector \(y\) và vector \(y - Py\) vào hình vẽ của bạn và giải thích ý nghĩa của
+              \(P\). Đại lượng nào đang được tối thiểu hóa?</li>
+          </ol>
+        </li>
+      </ol>
+    </div>
+
+    <h2>Bài 2: Độ chệch và Phương sai (Bias and Variance)</h2>
+    <div class="q">
+      <p>Xét độ chệch và phương sai của một mô hình hồi quy tuyến tính \(\hat{f}\).</p>
+
+      <ol>
+        <li>Hãy nêu định nghĩa của độ chệch (bias) và phương sai (variance).</li>
+        <li>Chứng minh rằng đẳng thức sau đây luôn đúng:
+          \[ \mathbb{E}[(y_{0} - \hat{f}(x_{0}))^{2}] = \mathbb{E}[(f(x_{0}) - \hat{f}(x_{0}))^{2}] +
+          Var(\epsilon) \]
+        </li>
+        <li>
+          Đối với thuật toán Hồi quy k-Láng giềng gần nhất (KNN), người ta có thể chứng minh mối quan hệ sau:
+          \[ \mathbb{E}[(y_{0} - \hat{f}(x_{0}))^{2}] = \left( f(x_{0}) - \frac{1}{k} \sum_{i=0}^{k}
+          f(N_{i}(x_{0})) \right)^{2} + \frac{\sigma^{2}}{k} + \sigma^{2} \]
+          trong đó \(N_{1}(x_{0}), \dots, N_{k}(x_{0})\) là \(k\) láng giềng gần nhất của mẫu \(x_{0}\) và
+          \(\sigma^{2} = Var(\hat{f}(x_{0}))\).
+          Hãy kết luận từ biểu thức này về ảnh hưởng của tham số \(k\) đối với độ chệch và phương sai.
+        </li>
+        <li>Giải thích sự khác biệt giữa sai số có thể giảm thiểu (reducible error) và sai số không thể giảm
+          thiểu (irreducible error).</li>
+      </ol>
+    </div>
+
+    <hr class="my-5"> -->
+
+    <h2>Bài 1: Khởi động </h2>
+    <div class="q">
+      <p>Giả sử ta muốn áp dụng một mô hình học máy thống kê phù hợp cho một bài toán nhất định. Hãy giải thích ngắn
+        gọn các thông số sau ảnh hưởng như thế nào:</p>
+      <ul>
+        <li>Dữ liệu đầu vào có nhãn (labelled) vs. dữ liệu không có nhãn (unlabelled).</li>
+        <li>Biến kiểu số (numerical) vs. biến phân loại (categorical).</li>
+        <li>Tính giải thích (interpretability) vs. nhiệm vụ dự báo (prediction task).</li>
+        <li>Số lượng tham số mô hình cố định (fixed) vs. linh hoạt (flexible).</li>
+      </ul>
+    </div>
+
+    <hr class="my-5">
+
+    <h2>Bài 2: Thước đo sai số </h2>
+    <div class="q">
+      <p>Trong bài toán hồi quy, ta thường sử dụng RSS làm thước đo sai số. Thay vào đó, hãy xem xét hàm mất mát
+        \(L\) sau đây:
+        \[ L(\beta,r)=\frac{1}{n}\sum_{i=1}^{n}r_{i}(y_{i}-\beta_{0}-x_{i}\beta)^{2} \tag{2.1} \]
+        cho một mục tiêu \(y\) và một biến dự báo đơn \(X \in \mathbb{R}^n\).
+      </p>
+      <ol>
+        <li>Tác dụng của các tham số \(r_i\) là gì? </li>
+        <li>Hãy tìm giá trị cực tiểu \(\hat{\beta}\) của Phương trình (2.1) khi giữ cố định \(r\).</li>
+        <li>Xem xét các lựa chọn sau cho \(r\). Hãy giải thích tác động của mỗi lựa chọn cũng như mục đích mà nó phục
+          vụ:
+          <ul>
+            <li>Ta đặt mỗi \(r_i\) thành một giá trị nguyên \(r_i \in \mathbb{Z}\) với \(r_i > 1\).</li>
+            <li>Giả sử ta biết phương sai nhiễu \(\sigma_i\) của mỗi mẫu dữ liệu \(x_i\), ta đặt \(r_i =
+              \frac{1}{\sigma_i^2}\).</li>
+            <li>Giả sử ta có hai tập dữ liệu khác nhau \(X_1\) và \(X_2\). Từ \(X_1\), ta ước lượng hàm mật
+              độ xác suất (pdf) trên \(X\) là \(p\), và từ \(X_2\) ta ước lượng mật độ là \(q\). Ta đặt \(r_i =
+              \frac{p(x_i)}{q(x_i)}\).</li>
+          </ul>
+        </li>
+        <li>Liệt kê ba giả định chính mà ta dựa vào trong hồi quy tuyến tính thông thường (OLS). Có giả định nào mà
+          ta có thể giải quyết bằng cách sử dụng \(L\) thay vì RSS không? Nói cách khác, \(L\) có thể giúp ta có kết quả
+          chính xác ngay cả khi giả định đó bị vi phạm.</li>
+      </ol>
+    </div>
+
+    <hr class="my-5">
+
+    <h2>Bài 3: Hình học </h2>
+    <div class="q">
+      <p>Bài tập này sẽ dẫn dắt ta qua một diễn giải hình học của hồi quy tuyến tính bằng cách sử dụng ví dụ nhỏ
+        sau đây:
+        \[ X=\begin{bmatrix}1 & 1 \\ 0 & 1 \\ -1 & 0\end{bmatrix}, \quad y=\begin{bmatrix}2 \\ 0 \\ 3\end{bmatrix}
+        \tag{3.1} \]
+      </p>
+      <ol>
+        <li>Nghiệm hồi quy tuyến tính \(\hat{\beta}\) cho dữ liệu trên là gì?</li>
+        <li>Bây giờ ta xem xét không gian \(S \in \mathbb{R}^3\) được tạo bởi các cột \(X^{(i)}\) của \(X\):
+          \[ S=span(X^{(1)},X^{(2)})=\{a_{1}X^{(1)}+a_{2}X^{(2)} \mid a_{i} \in \mathbb{R}\} \]
+          Chứng minh rằng ma trận \(P=X(X^{T}X)^{-1}X^{T}\) ánh xạ vector \(y\) lên không gian này.
+        </li>
+        <li>Chứng minh rằng vector \(y - Py\) vuông góc với không gian \(S\), tức là \(y - Py \perp S\).
+          <br><em>Gợi ý: Điều này tương đương với việc chứng minh \(\langle y - Py, Xa \rangle = 0\) với mọi \(a \in
+            \mathbb{R}^2\), trong đó \(\langle , \rangle\) là tích vô hướng.</em>
+        </li>
+        <li>Dựa trên phần (3) trước đó, \(P\) và \(\hat{\beta}\) có mối quan hệ như thế nào? </li>
+      </ol>
+    </div>
+
+    <hr class="my-5">
+
+    <h2>Bài 4: Độ chệch và Phương sai </h2>
+    <div class="q">
+      <p>Xem xét độ chệch (bias) và phương sai (variance) của một mô hình tuyến tính \(f\).</p>
+      <ol>
+        <li>Giải thích bằng các thuật ngữ ngắn gọn ý nghĩa của độ chệch và phương sai trong ngữ cảnh của hồi quy tuyến
+          tính. Mối quan hệ giữa chúng là gì? </li>
+        <li>Xem xét phương trình sau:
+          \[ Var(\hat{f}(x_{0})) + [Bias(\hat{f}(x_{0}))]^{2} = \mathbb{E}[(f(x_{0}) - \hat{f}(x_{0}))^{2}] \tag{4.1} \]
+          Giải thích ý nghĩa của từng thuật ngữ và chứng minh rằng đẳng thức trên đúng.
+        </li>
+        <li>\(\mathbb{E}[(f(x_{0}) - \hat{f}(x_{0}))^{2}]\) có liên quan như thế nào đến MSE kiểm tra kỳ vọng (expected
+          test MSE), \(\mathbb{E}[(y_{0} - \hat{f}(x_{0}))^{2}]\)? Xem xét hiệu của hai đại lượng này và giải thích
+          ý
+          nghĩa của nó.</li>
+        <li>Cho biết phát biểu sau đây là đúng hay sai và giải thích tại sao:
+          <br><em>"Định lý Gauss-Markov phát biểu rằng các ước lượng bình phương tối thiểu \(\hat{\beta}\) có phương sai
+            nhỏ nhất trong tất cả các ước lượng tuyến tính. Vì các ước lượng bình phương tối thiểu \(\hat{\beta}\) là
+            không chệch, điều này có nghĩa là các ước lượng có chệch sẽ luôn có phương sai lớn hơn
+            \(\hat{\beta}\)."</em>
+        </li>
+      </ol>
+    </div>
+  </main>
+</body>
+
+</html>

@@ -30,4 +30,5 @@ $RECYCLE.BIN/
 *.bat 
 !upload_to_git.bat
 
+VDT/
 

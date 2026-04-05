@@ -1,0 +1,118 @@
+
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Học máy | Bài tập về nhà #3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+    <main class="container my-4">
+        <h1>Bài tập về nhà #3</h1>
+        <h2>Bài toán phân lớp</h2>
+        <hr>
+
+        <h2>Bài 1: Hồi quy Logistic</h2>
+        <div class="q">
+            <p>Khi trả lời các câu hỏi sau, yêu cầu trình bày chính xác (ví dụ: sử dụng phương trình) và ngắn gọn.</p>
+            <ol>
+                <li>Hai vấn đề của hồi quy tuyến tính khi áp dụng cho bài toán phân lớp là gì?</li>
+                <li>Mối quan hệ toán học giữa các biến đầu vào và xác suất dự báo là gì? Hồi quy logistic mô hình hóa
+                    điều gì?</li>
+                <li><strong>Odds</strong> (tỉ số chênh) là gì và chúng được tính toán như thế nào? Giải thích mối quan
+                    hệ giữa odds và hồi quy logistic.</li>
+                <li>Trong trường hợp hồi quy logistic đa biến, odds thay đổi như thế nào đối với đầu vào \(x \in
+                    \mathbb{R}^d\), nếu \(x\) bị biến đổi thành \(\overline{x} = x + \epsilon e_j\) (với \(\epsilon \neq
+                    0\))? Ta có thể nói gì về sự thay đổi này (phụ thuộc vào \(e\))?</li>
+                <li>Cho \(X\) là một biến ngẫu nhiên vô hướng. Chứng minh rằng:
+                    \[ p(X) = \frac{e^{\beta_0 + \beta_1 X}}{1 + e^{\beta_0 + \beta_1 X}} \iff \log\left(\frac{p(X)}{1 -
+                    p(X)}\right) = \beta_0 + \beta_1 X \]
+                    Mối quan hệ giữa hàm <strong>logistic</strong> và hàm <strong>logit</strong> là gì? Tại sao thông
+                    tin về mối quan hệ này lại quan trọng? Hãy giải thích.
+                </li>
+            </ol>
+        </div>
+
+        <hr class="my-5">
+
+        <h2>Bài 2: Phân tích định biệt tuyến tính (LDA)</h2>
+        <div class="q">
+            <ol>
+                <li>Trong LDA, chúng ta giả định đặc trưng đầu vào \(x \in \mathbb{R}\) là liên tục. Ở đây,
+                    hãy xét \(x \in \mathbb{N}_0\) là một số tự nhiên và tuân theo phân phối Poisson. Khi đó, \(p_k(x)\)
+                    được cho bởi:
+                    \[ p_k(x) = Pr(Y=k|X=x) = \frac{\pi_k f_k(x)}{\sum_{l=1}^K \pi_l f_l(x)} \quad \text{với} \quad
+                    f_k(x) = \frac{\lambda_k^x e^{-\lambda_k}}{x!} \]
+                    Với mỗi lớp \(k\), có một tham số phân phối riêng biệt \(\lambda_k > 0\). Hãy thiết lập ranh giới
+                    quyết định (decision boundary) giữa hai lớp \(k\) và \(l\) theo biến \(x\).
+                </li>
+                <li>Giả sử có vô hạn lớp \(k \in \mathbb{N}_0\) và \(k\) tuân theo phân phối Poisson \(\pi(k) =
+                    \frac{\lambda^k e^{-\lambda}}{k!}\). Ngoài ra, giả sử \(x \in \mathbb{R}\) và \(f_k(x) \sim
+                    \mathcal{N}(\mu_k, \sigma^2)\). Hãy thiết lập ranh giới quyết định giữa hai lớp \(k\) và \(l\) theo
+                    biến \(x\).</li>
+                <li>Tiếp theo, xét bối cảnh đa biến \(x = (x_1, \dots, x_m)^T\) với \(K\) lớp. Giả sử tất cả các \(x_i\)
+                    độc lập với nhau (ngay cả khi có điều kiện về một lớp cụ thể). Giả sử phương sai là giống nhau giữa
+                    các lớp, trong khi giá trị trung bình khác nhau tùy theo lớp. Cụ thể, mỗi đặc trưng được phân phối
+                    theo \(f_{ki}(x_i) \sim \mathcal{N}(\mu_{ki}, \sigma_i^2)\). Hãy thiết lập hàm mật độ \(f_k(x)\) và
+                    nêu (không cần chứng minh) hàm định biệt \(\delta_x\).</li>
+                <li>Các giả định của LDA liên quan đến phân phối dữ liệu và ranh giới quyết định là gì? Hãy so sánh
+                    chúng với các giả định của các mô hình khác (k-NN, Hồi quy Logistic, QDA).</li>
+                <li>Trong bối cảnh đa biến, hãy đưa ra một quy tắc (heuristic) dựa trên ma trận hiệp phương sai
+                    \(\Sigma\) để biết khi nào nên sử dụng LDA hoặc QDA tốt hơn. Tại sao việc sử dụng LDA thay vì QDA
+                    lại có thể được ưu tiên trong trường hợp đó?</li>
+            </ol>
+        </div>
+
+        <hr class="my-5">
+
+        <h2>Bài 3: Hồi quy Logistic (nâng cao)</h2>
+        <div class="q">
+            <p>Trong bài giảng, chúng ta đã xem xét hồi quy logistic đa biến (MLR) cho trường hợp hai lớp. Xác suất một
+                mẫu \(x\) thuộc lớp \(y=1\) được cho bởi:
+                \[ p(y=1|x) = \frac{\exp(w^T x + b)}{1 + \exp(w^T x + b)} = \sigma(z) \]
+                Bài tập này mở rộng hồi quy logistic đa biến sang bối cảnh đa lớp (MMLR) với \(K\) vector trọng số (mỗi
+                vector cho một lớp). Xác suất mẫu \(x_n\) thuộc lớp \(y=k\) được mô hình hóa là:
+                \[ p(y=k|x_n) = \frac{\exp(w_k^T x_n + b_k)}{\sum_{j=1}^K \exp(w_j^T x_n + b_j)} =:
+                \Lambda_\theta(k|z_n) \]
+            </p>
+
+            <ol>
+                <li>Chứng minh rằng với \(K=2\), MLR và MMLR là tương đương bằng cách chọn các tham số phù hợp.</li>
+                <li>Đối với tập quan sát i.i.d. \((X, Y) = \{(x_n, y_n)\}_{n=1}^N\), hãy chứng minh rằng hàm
+                    log-likelihood âm của MMLR có thể được viết dưới dạng:
+                    \[ -\log p(Y|X) = -\sum_{n=1}^N \sum_{k=1}^{K} y_{nk}^o \log \hat{y}_{nk} \tag{4.1} \]
+                    Trong đó \(y_{nk}^o\) là mã hóa one-hot của \(y_n\).
+                </li>
+                <li>Chứng minh rằng đạo hàm riêng của \(\Lambda(k|z_n)\) theo \(z_{nj}\) có thể được viết là:
+                    \[ \frac{\partial \Lambda(k|z_n)}{\partial z_{nj}} = \Lambda(k|z_n) (\mathbb{I}_{kj} -
+                    \Lambda(j|z_n)) \]
+                    với \(\mathbb{I}\) là ma trận đơn vị.
+                </li>
+                <li>
+                    <p>Mục tiêu là tìm bộ tham số \(\theta = \{w_i\}_{i=1}^m \cup \{b_i\}_{i=1}^m\) để tối thiểu hóa hàm
+                        log-likelihood âm (hàm mất mát Cross-Entropy):</p>
+                    \[ \mathcal{L}(Y, \hat{Y}_{\theta}) = -\sum_{n=1}^{N} \sum_{k=1}^{K} y_{nk}^o \log \hat{y}_{nk} \]
+
+                    <p>Quy tắc cập nhật xuống đồi (Gradient Descent):</p>
+                    <div>
+                        \[ w_j^{new} = w_j^{old} - \alpha \nabla_{w_j^{old}} \mathcal{L}(Y, \hat{Y}_{w_j^{old}}) \]
+                        \[ b_j^{new} = b_j^{old} - \alpha \partial_{b_j^{old}} \mathcal{L}(Y, \hat{Y}_{b_j^{old}}) \]
+                    </div>
+                    <p>Khai triển công thức đạo hàm riêng của hàm mất mát \(\mathcal{L}\) đối với \(w_j\) và \(b_j\) để
+                        có được quy tắc
+                        cập nhật cụ thể cho MMLR.</p>
+                </li>
+            </ol>
+        </div>
+    </main>
+</body>
+
+</html>
